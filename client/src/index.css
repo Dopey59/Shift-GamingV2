@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.maincontainer {
+  width: 100%;
+  height: auto;
+}
+
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.mirage {
+  height: auto;
+  width: 100%;
+}
+.embla {
+  overflow: hidden;
+  position: relative;
+}
+.embla__container {
+  display: flex;
+  position: relative;
+}
+
+.embla__container, p:hover{
+  color: black;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* .svgCarousel{
+  filter: invert(47%) sepia(50%) saturate(7388%) hue-rotate(224deg) brightness(99%) contrast(92%);
+} */
+
+
+@media screen and (max-width: 768px) {
+  .wallpaper {
+    width: 100%;
+    height: 500px;
+  }
+
+  
+
+  .mirage {
+    height: auto;
+    width: 50vh;
+  }
+  .embla__container::after {
+    content: "";
+    flex: 0 0 100%;
+    min-width: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+}
+
+@media screen and (max-width: 992px) {
+ 
+
+  .mirage {
+    display: none; /* Pour masquer l'élément */
+  }
+}
