@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar';
-import Carousel from '../components/carousel.tsx';
+import Carousel from '../components/carousel';
 import Api from '../components/api';
 import Footer from '../components/footer';
 
