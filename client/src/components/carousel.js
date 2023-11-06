@@ -8,7 +8,7 @@ export const EmblaCarousel = () => {
     <div className="embla bg-white/30 backdrop-sepia/30 " ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide hover:bg-green-300 duration-0 transition hover:sm:font-bold hover:duration-500">
-          <a className='hover:cursor-pointer' href='#'>
+          <a className='hover:cursor-pointer' href='https://www.instant-gaming.com/fr/xbox/?igr=gamer-7232d0'>
           <div className="flex flex-col items-center">
             <img
                 className="svgCarousel py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500 "
@@ -21,7 +21,7 @@ export const EmblaCarousel = () => {
         </div>
 
         <div className="embla__slide hover:bg-blue-600 duration-0 transition hover:sm:font-bold hover:duration-500 hover:text-white">
-          <a className='hover:cursor-pointer' href='#'>
+          <a className='hover:cursor-pointer' href='https://www.instant-gaming.com/fr/playstation/?igr=gamer-7232d0'>
           <div className="flex flex-col items-center">
             <img
                 className="svgCarousel py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0"
@@ -34,7 +34,7 @@ export const EmblaCarousel = () => {
         </div>
 
         <div className="embla__slide hover:bg-red-600 duration-0 transition hover:sm:font-bold hover:duration-500 hover:text-white">
-          <a className='hover:cursor-pointer' href='#'>
+          <a className='hover:cursor-pointer' href='https://www.instant-gaming.com/fr/nintendo/switch/?igr=gamer-7232d0'>
           <div className="flex flex-col items-center">
             <img
                 className="svgCarousel py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500"
@@ -47,7 +47,7 @@ export const EmblaCarousel = () => {
         </div>
 
         <div className="embla__slide hover:bg-yellow-300 duration-0 transition hover:sm:font-bold hover:duration-500 ">
-          <a className='hover:cursor-pointer' href='#'>
+          <a className='hover:cursor-pointer' href='https://www.instant-gaming.com/fr/pc/?igr=gamer-7232d0'>
           <div className="flex flex-col items-center">
             <img
                 className="svgCarousel py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500"
@@ -58,22 +58,9 @@ export const EmblaCarousel = () => {
           </div>
           </a>
         </div>
-        
-        <div className="embla__slide hover:bg-indigo-400 duration-0 transition hover:sm:font-bold hover:duration-500 hover:text-white ">
-          <a className='hover:cursor-pointer' href='#'>
-          <div className="flex flex-col items-center">
-            <img
-                className="svgCarousel py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500"
-                src={require('../assets/vr.png')}
-                alt="wallpaper"
-            />  
-            <p className='p-2 sm:font-bold '>Réalité virtuelle</p>
-          </div>
-          </a>
-        </div>
 
         <div className="embla__slide hover:bg-rose-500 duration-0 transition hover:sm:font-bold hover:duration-500 hover:text-white">
-          <a className='hover:cursor-pointer' href='#'>
+          <a className='hover:cursor-pointer' href='https://www.instant-gaming.com/?igr=gamer-7232d0'>
           <div className="flex flex-col items-center">
             <img
                 className="svgCarousel py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-gray-500"

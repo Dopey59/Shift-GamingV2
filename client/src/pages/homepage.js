@@ -3,8 +3,6 @@ import Carousel from '../components/carousel';
 import Api from '../components/api';
 import Footer from '../components/footer';
 
-
-
 import '../assets/wallpaper2.webp'
 import '../index.css';
 
