@@ -60,6 +60,7 @@ export default function Homepage(){
                         </div>
 
                         <div className="grid w-full h-auto gap-6 sm:grid-cols-4 grid-cols-2">
+
                             <div className='flex justify-center flex-col items-center
                             duration-0 transition-0 hover:duration-700 hover:origin-left-right hover:skew-y-3 hover:scale-105
                              hover:contrast-125 hover:brightness-50 '>
@@ -74,6 +75,7 @@ export default function Homepage(){
                                     En savoir plus </a>
                                 </div>
                             </div>
+
                             <div className='flex justify-center flex-col items-center first-letter:duration-0 transition-0 hover:duration-700
                              hover:origin-left-right hover:skew-y-3 hover:scale-105 hover:contrast-125 hover:brightness-50 '>
                                 <a href="https://track.effiliation.com/servlet/effi.click?id_compteur=22924113" target="_blank">
@@ -88,19 +90,21 @@ export default function Homepage(){
                                 </div>
                                 
                             </div>
+
                             <div className='flex justify-center flex-col items-center duration-0 transition-0 hover:duration-700 hover:origin-left-right
                              hover:skew-y-3 hover:scale-105 hover:contrast-125 hover:brightness-10 '>
-                                <a href="#" target="_blank">
+                                <a href="https://www.instant-gaming.com/?igr=gamer-7232d0" target="_blank">
                                     <img classsName="rounded-full" src={require('../assets/ig.jpg')} alt="pub"/>
                                 </a>
                                 <div className='mt-4 lg:invisible visible' >
                                     <a
-                                    href='https://track.effiliation.com/servlet/effi.click?id_compteur=22918216' 
+                                    href='https://www.instant-gaming.com/?igr=gamer-7232d0' 
                                     target="_blank"
                                     className='bg-black p-2 rounded text-white font-semibold'>
                                     En savoir plus </a>
                                 </div>
                             </div>
+
                             <div className='flex justify-center flex-col items-center duration-0 transition-0 hover:duration-700 hover:origin-left-right hover:skew-y-3
                                 hover:scale-105 hover:contrast-125 hover:brightness-10 '>
                                 <a href="https://www.amazon.fr/gp/search?ie=UTF8&tag=shiftgaming-21&linkCode=ur2&linkId=f7a67d4db037262810445128d04f8322&camp=1642&creative=6746&index=computers&keywords=pc gamer" target="_blank">
@@ -115,11 +119,11 @@ export default function Homepage(){
                                 </div>
                             </div>
                         </div>
-                    <a href="https://track.effiliation.com/servlet/effi.click?id_compteur=22924129" target="_blank">
-                        <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
-                            <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Chaises gaming & ergonomiques</h1>
-                        </div>
-                    </a>
+                        <a href="https://track.effiliation.com/servlet/effi.click?id_compteur=22924129" target="_blank">
+                            <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
+                                <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Chaises gaming & ergonomiques</h1>
+                            </div>
+                        </a>
                     </div>
 
                 {/* Section 2 end */}

@@ -60,7 +60,7 @@ function Api() {
                 <div className="grid sm:grid-cols-3 grid-cols-1">
                     {chaises.map(item => (
                         <div className="sm:p-8 flex p-2">
-                            <div className="w-full h-auto flex flex-col mt-8 sm:mt-0 items-center">
+                            <div className="w-full h-auto flex flex-col mt-8 sm:mt-0 items-center gap-6">
                                 <div>
                                     <h2 className="sm:text-xl text-indigo-900 font-bold">{item.title}</h2>
                                 </div>
@@ -81,8 +81,8 @@ function Api() {
                                 <p className="font-bold">Prix: {item.price}€</p>
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                                     <button
-                                        className="p-2 bg-rose-600 rounded font-bold text-white
-                                        hover:bg-rose-600 transition duration-0 hover:duration-500 hover:cursor-pointer
+                                        className="p-2 bg-rose-600 hover:bg-indigo-600 rounded font-bold text-white
+                                        transition duration-0 hover:duration-500 hover:cursor-pointer
                                        ">
                                         Voir le site
                                     </button>
