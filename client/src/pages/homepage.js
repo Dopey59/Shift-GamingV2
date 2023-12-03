@@ -2,18 +2,12 @@ import Navbar from '../components/navbar';
 import Carousel from '../components/carousel';
 import Api from '../components/api';
 import Footer from '../components/footer';
-
 import '../assets/wallpaper2.webp'
 import '../index.css';
 
-const images = [
-    "https://shop.wankil.fr/cdn/shop/products/sweatsovietrougemockup.jpg?v=1579800917&width=600/",
-    "https://shop.wankil.fr/cdn/shop/products/sweatwankil_1_40a811ad-d859-4237-93eb-9778162ca8c4.jpg?v=1616257159&width=600",
-    "https://shop.wankil.fr/cdn/shop/products/sweatcasquette_2_01bdd90a-05d8-4c01-b08c-83d93c965a42.jpg?v=1616257503&width=600",
-    "https://shop.wankil.fr/cdn/shop/products/sweatcasquette_3.jpg?v=1616257503&width=670",
-  ];
-
 export default function Homepage(){
+
+ 
     
     return(
         <>
@@ -28,9 +22,9 @@ export default function Homepage(){
             </div>
             <div className="xl:p-44">
                 {/* Section 1 start */}
-                <div className='relative flex justify-between items-center sm:p-20 py-16 px-2 bg-zinc-900 '>
+                <div className='relative flex justify-between w-auto h-full items-center sm:p-20 py-16 px-2 bg-zinc-900 '>
                     <div className='flex flex-col gap-8 sm:translate-y-0 p-2'>
-                        <h1 className='text-xl font-semibold sm:text-5xl text-white sm:w-2/3'>Des jeux à prix réduit toute l'année 🎮</h1>
+                        <h1 className='text-xl font-semibold sm:text-5xl text-white'>Des jeux à prix réduit toute l'année 🎮</h1>
                         <p className='text-white sm:text-lg text-xs'>Valable sur toutes les plateformes*</p>
                         <div>
                             <a href='#' className='bg-rose-600 px-auto rounded p-2 font-semibold text-white'>En savoir plus</a>
@@ -55,9 +49,12 @@ export default function Homepage(){
                 {/* Section 2 start */}
                     <div className="relative bg-gray-100 p-6 ">
                         
-                        <div className='w-full flex justify-center sm:mt-4 mt-4 mb-8 sm:mb-8'>
-                            <h1 className='sm:text-3xl text-indigo-900 text-xl font-bold'>Des partenaires puissants</h1>
+                        <div className=' flex flex-col gap-4 items-center justify-center sm:mt-4 mt-4 mb-8 sm:mb-8'>
+                          <div className='flex flex-col gap-2 items-center justify-center'>
+                            <h1 className='sm:text-4xl text-indigo-900 text-xl font-bold'>Des partenaires puissants</h1>
+                            <h2 className='text-xs sm:text-lg'>Clique pour attérir en parachute chez nos partenaires. </h2>
                         </div>
+                          </div>
 
                         <div className="grid w-full h-auto gap-6 sm:grid-cols-4 grid-cols-2">
 
@@ -71,7 +68,7 @@ export default function Homepage(){
                                     <a
                                     href='https://track.effiliation.com/servlet/effi.click?id_compteur=22918216' 
                                     target="_blank"
-                                    className='bg-black p-2 rounded text-white font-semibold'>
+                                    className='border-2 border-black p-2 rounded font-semibold'>
                                     En savoir plus </a>
                                 </div>
                             </div>
@@ -85,7 +82,7 @@ export default function Homepage(){
                                     <a
                                     href='https://track.effiliation.com/servlet/effi.click?id_compteur=22918216' 
                                     target="_blank"
-                                    className='bg-black p-2 rounded text-white font-semibold'>
+                                    className='border-2 border-black p-2 rounded font-semibold'>
                                     En savoir plus </a>
                                 </div>
                                 
@@ -100,7 +97,7 @@ export default function Homepage(){
                                     <a
                                     href='https://www.instant-gaming.com/?igr=gamer-7232d0' 
                                     target="_blank"
-                                    className='bg-black p-2 rounded text-white font-semibold'>
+                                    className='border-2 border-black p-2 rounded font-semibold'>
                                     En savoir plus </a>
                                 </div>
                             </div>
@@ -114,7 +111,7 @@ export default function Homepage(){
                                     <a
                                     href='' 
                                     target="_blank"
-                                    className='bg-black p-2 rounded text-white font-semibold'>
+                                    className='border-2 border-black p-2 rounded font-semibold'>
                                     En savoir plus </a>
                                 </div>
                             </div>
@@ -124,7 +121,35 @@ export default function Homepage(){
                                 <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Chaises gaming & ergonomiques</h1>
                             </div>
                         </a>
+
+                        <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
+                            <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Catégories Tops Loots </h1>
+                        </div>
+
+                        <div className='containerLoot'>
+                            <div className='grid sm:grid-cols-2 gap-4'>
+                              <div className='relative flex items-end'>
+                                <div className='absolute flex flex-col sm:gap-2 gap-1 sm:p-6'>
+                                    <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Sièges Gaming</h1>
+                                    <div className='w-auto h-auto flex gap-2 p-2'>
+                                      <span className='text-white  border-2  bg-gray-800 rounded'>NobleChairs</span>
+                                      <span className='text-white  border-2  bg-gray-800 rounded'>Ergonomique</span>
+                                      <span className='text-white  border-2  bg-gray-800 rounded'>Cuir</span>
+                                      <span className='text-white  border-2  bg-gray-800 rounded'>Tissu</span>
+
+
+                                    </div>
+                                </div>
+                               <img classsName="rounded-full" src={require('../assets/gamer-chair.avif')} alt="pub"/>
+                              </div>
+                              
+                               <img classsName="rounded-full" src={require('../assets/gamer-chair.avif')} alt="pub"/>
+                               <img classsName="rounded-full" src={require('../assets/gamer-chair.avif')} alt="pub"/>
+
+                            </div>
+                        </div>
                     </div>
+
 
                 {/* Section 2 end */}
 

@@ -28,7 +28,7 @@ export const EmblaCarousel = () => {
                 src={require('../assets/buttons.png')}
                 alt="wallpaper"
             />  
-            <p className='p-2 sm:font-bold sm:w-auto w-1/2'>Jeux Playstation</p>
+            <p className='p-2 sm:font-bold '>Jeux Playstation</p>
           </div>
           </a>
         </div>

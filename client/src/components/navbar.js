@@ -33,7 +33,7 @@ export default function Navbar(){
                     <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
                         <div class="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
                             <button type="button" class="w-full flex justify-between items-center text-sm hover:bg-indigo-500 text-white rounded-md py-2 px-3 font-bold">
-                                Pc
+                                Offres Pc
                                 <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                 </svg>
@@ -41,12 +41,6 @@ export default function Navbar(){
                         
 
                             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute sm:border before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="#">
-                                Chaises Gaming
-                                </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="#">
-                                Bureaux Gaming
-                                </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="/ComposantPc">
                                 Composants Pc
                                 </a>
@@ -55,7 +49,7 @@ export default function Navbar(){
 
                         <div class="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
                             <button type="button" class="w-full flex justify-between items-center text-sm hover:bg-indigo-500 text-white rounded-md py-2 px-3 font-bold">
-                                Jeux vidéos
+                                Offres Jeux
                                 <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                                 </svg>
@@ -72,6 +66,27 @@ export default function Navbar(){
                             
                             </div>
                         </div>
+
+                        <div class="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                            <button type="button" class="w-full flex justify-between items-center text-sm hover:bg-indigo-500 text-white rounded-md py-2 px-3 font-bold">
+                                Confort
+                                <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                        
+
+                            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute sm:border before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="#">
+                                Chaises Gaming
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="#">
+                                Bureaux Gaming
+                                </a>
+                            </div>
+                        </div>
+
+                        
 
                         <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white hover:bg-indigo-500 font-bold" href="/Faq">
                         F.A.Q
