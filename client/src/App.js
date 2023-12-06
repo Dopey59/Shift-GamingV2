@@ -7,6 +7,8 @@ import Faq from './pages/faq';
 import Contact from './pages/contact';
 import ComposantPc from './pages/composantPc';
 import Plateformes from './components/platforms';
+import Apidata from './components/api';
+
 
 
 
@@ -19,7 +21,7 @@ function App() {
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/ComposantPc" element={<ComposantPc/>} />
-        {/* <Route path="/RektGaming" element={<Apidata/>} />  */}
+        <Route path="/Siege-gamer" element={<Apidata/>} /> 
     </Routes>
   );
 }

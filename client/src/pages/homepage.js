@@ -1,7 +1,8 @@
 import Navbar from '../components/navbar';
 import Carousel from '../components/carousel';
-import Api from '../components/api';
 import Footer from '../components/footer';
+import TrustPage from '../components/trust';
+
 import '../assets/wallpaper2.webp'
 import '../index.css';
 
@@ -116,46 +117,93 @@ export default function Homepage(){
                                 </div>
                             </div>
                         </div>
-                        <a href="https://track.effiliation.com/servlet/effi.click?id_compteur=22924129" target="_blank">
-                            <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
-                                <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Chaises gaming & ergonomiques</h1>
-                            </div>
-                        </a>
+
+                        <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
+                            <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Trailer Officiel GTA VI </h1>
+                        </div>
+
+                        <div className='flex justify-center'>
+                            <iframe className='rounded-xl' autoplay muted width="1280" height="720" src="https://www.youtube.com/embed/QdBZY2fkU-0" title="Grand Theft Auto VI Trailer 1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
 
                         <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
                             <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Catégories Tops Loots </h1>
                         </div>
 
-                        <div className='containerLoot'>
-                            <div className='grid sm:grid-cols-2 gap-4'>
+                        <div className='containerLoot grid sm:grid-cols-2 gap-4'>
+                            <a href="/Siege-gamer" target="_blank" rel="noopener noreferrer">
                               <div className='relative flex items-end'>
-                                <div className='absolute flex flex-col sm:gap-2 gap-1 sm:p-6'>
+                                <div className='absolute flex flex-col justify-start'>
                                     <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Sièges Gaming</h1>
-                                    <div className='w-auto h-auto flex gap-2 p-2'>
-                                      <span className='text-white  border-2  bg-gray-800 rounded'>NobleChairs</span>
-                                      <span className='text-white  border-2  bg-gray-800 rounded'>Ergonomique</span>
-                                      <span className='text-white  border-2  bg-gray-800 rounded'>Cuir</span>
-                                      <span className='text-white  border-2  bg-gray-800 rounded'>Tissu</span>
-
-
+                                    <div className=' flex gap-2 p-2'>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>NobleChairs</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Ergonomique</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Cuir</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Tissu</span>
                                     </div>
                                 </div>
                                <img classsName="rounded-full" src={require('../assets/gamer-chair.avif')} alt="pub"/>
                               </div>
-                              
-                               <img classsName="rounded-full" src={require('../assets/gamer-chair.avif')} alt="pub"/>
-                               <img classsName="rounded-full" src={require('../assets/gamer-chair.avif')} alt="pub"/>
+                            </a>
 
-                            </div>
+                            <a  className="" href="" target="_blank" rel="noopener noreferrer">
+                                <div className='relative flex items-end '>
+                                    <div className='absolute flex flex-col justify-start'>
+                                        <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Pc, écrans, claviers..</h1>
+                                        <div className=' flex gap-2 p-2'>
+                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Ecrans 4K</span>
+                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Asus</span>
+                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Nvidia</span>
+                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Corsair</span>
+                                        </div>
+                                    </div>
+                                    <img classsName="rounded-full" src={require('../assets/setup-3.avif')} alt="pub"/>
+                                </div>
+                            </a>
+
+                            <a href="https://www.instant-gaming.com/?igr=gamer-7232d0" target="_blank" rel="noopener noreferrer">
+                              <div className='relative flex items-end'>
+                                <div className='absolute flex flex-col justify-start'>
+                                    <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Jeux vidéos</h1>
+                                    <div className=' flex gap-2 p-2'>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Instant Gaming</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>10% à 90% off</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Bons plans</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Toutes plateformes</span>
+                                    </div>
+                                </div>
+                                    <img classsName="rounded-full" src={require('../assets/gta3.avif')} alt="pub"/>
+                              </div>
+                            </a>
+
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                              <div className='relative flex items-end'>
+                                <div className='absolute flex flex-col justify-start'>
+                                    <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Idées cadeaux</h1>
+                                    <div className=' flex gap-2 p-2'>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Offrir</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Noel</span>
+                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Bons plans</span>
+                                    </div>
+                                </div>
+                                    <img classsName="rounded-full" src={require('../assets/xmas.jpg')} alt="pub"/>
+                              </div>
+                            </a>
                         </div>
+
+                        <div className='flex justify-center items-center  sm:mt-4 mt-8 mb-4 sm:mb-8'>
+                            <h1 className='relative sm:text-3xl text-xl text-indigo-900 font-bold'>Catégories Tops Loots </h1>
+                        </div>
+                    <TrustPage/>
                     </div>
 
 
                 {/* Section 2 end */}
 
                 {/* Section 3 start */}
-                <Api/>
+                {/* <Api/> */}
                 {/* Section 3 end */}
+
 
             </div>
         

@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Papa from 'papaparse';
 import ReactPaginate from 'react-paginate';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+
+
 
 function Api() {
     //Pagination Params//
@@ -53,45 +57,34 @@ function Api() {
 
     // Filtrer les bureaux
     const bureaux = data.filter(item => item.category.toLowerCase() === 'bureau');
-
     return (
-        <div className="relative w-full h-auto bg-white">
-                
-                <div className="grid sm:grid-cols-3 grid-cols-1">
+        <>
+        <Navbar/>
+            <div className="relative w-full h-auto bg-white py-10 ">  
+            <div className='mt-14 flex justify-center items-center flex-col gap-3 '>
+                <h1 className='sm:text-3xl uppercase font-bold'>Spécialement conçues pour de longues heures de Try Hard</h1>
+                    <h3 className='Text-xl '>*Profite également de <span className='text-indigo-500'>3% de réduction</span> avec le code : REKT03</h3>
+                    <p className='text-xs text-gray-500'>*A appliquer lors de votre passage en caisse sur le site REKT.</p>
+            </div>              
+                <div className="grid sm:grid-cols-4 grid-cols-1">
                     {chaises.map(item => (
-                        <div className="sm:p-8 flex p-2">
-                            <div className="w-full h-auto flex flex-col mt-8 sm:mt-0 items-center gap-6">
-                                <div>
-                                    <h2 className="sm:text-xl text-indigo-900 font-bold">{item.title}</h2>
+                        <div className="sm:p-8 flex justify-center">
+                            <div className="flex flex-col gap-4 border-2 border-gray-200 hover:shadow-md hover:shadow-gray-500 rounded items-center">
+                            <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                <div className="flex flex-col justify-center items-center bg-gray-100 rounded gap-4 " key={item.id}>
+                                    <img className="" width="300px" height="auto" src={item.image_link} alt={item.title} />
                                 </div>
-                                <div className="flex flex-col justify-center items-center" key={item.id}>
-                                    <img className="w-64 h-auto"  src={item.image_link} alt={item.title} />
+                                <div className='flex  flex-col items-start p-4 gap-2'>
+                                    <h2 className="text-sm font-bold">{item.title}</h2>
+                                    <p className='text-xs text-green-500 font-bold border-2 p-1 rounded bg-green-100/50 border-green-500'>Livré avant noël</p>
+                                    <p className="text-sm font-bold text-indigo-600">{item.price}€</p> 
                                 </div>
-                                {/* <div className="flex flex-col">
-                                    <p className="font-bold">
-                                        Présentation du produit:{" "}
-                                    </p>
-                                        <hr className="mt-4 mb-4 "/>
-                                    <div className="text-md flex gap-1 text-base/7">
-                                        {item.description.length >= 600
-                                            ? `${item.description.slice(0, 312)} .. `
-                                            : item.description}
-                                    </div>
-                                </div> */}
-                                <p className="font-bold">Prix: {item.price}€</p>
-                                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                    <button
-                                        className="p-2 bg-rose-600 hover:bg-indigo-600 rounded font-bold text-white
-                                        transition duration-0 hover:duration-500 hover:cursor-pointer
-                                       ">
-                                        Voir le site
-                                    </button>
-                                </a>
+                            </a>
                             </div>
                         </div>
                     ))}
                 </div>
-
+                   
 
             <ReactPaginate
                 className="flex justify-between p-6"
@@ -107,6 +100,9 @@ function Api() {
                 activeClassName={'active'}
             />
         </div>
+        <Footer/>
+
+        </>
     );
 }
 

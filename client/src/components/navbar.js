@@ -57,11 +57,14 @@ export default function Navbar(){
                         
 
                             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute sm:border before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="#">
-                                Jeux
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="https://www.instant-gaming.com/fr/cartes-prepayees/microsoft-store/?igr=gamer-7232d0" target="_blank" rel="noopener noreferrer">
+                                Microsoft store
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="#">
-                                Cartes psn & xbox
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="https://www.instant-gaming.com/fr/cartes-prepayees/playstation-store/?igr=gamer-7232d0" target="_blank" rel="noopener noreferrer">
+                                Playstation store
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white font-bold hover:bg-indigo-500" href="https://www.instant-gaming.com/fr/?igr=gamer-7232d0" target="_blank" rel="noopener noreferrer">
+                                Instant Gaming
                                 </a>
                             
                             </div>
