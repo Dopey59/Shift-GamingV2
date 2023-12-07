@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+h1, h2, h3, h4 {
+  font-family: 'Exo', sans-serif;
+}
+a, span, p, ul, li {
+  font-family: 'Montserrat', sans-serif;
+}
+.activePagi{
+    background-color: #4f46e5; /* Couleur de fond de la pagination active */
+    color: #fff; /* Couleur du texte de la pagination active */
+    border: 1px solid #4f46e5; /* Bordure de la pagination active */
+    padding: 5px 10px; /* Espacement interne de la pagination active */
+    border-radius: 10%; /* Bordure arrondie de la pagination active */
+    cursor: pointer; /* Curseur au survol de la pagination active */
+}
+
+
 .maincontainer {
   width: 100%;
   height: auto;
@@ -13,6 +32,10 @@
   background-size: cover;
 }
 
+.montage-pc{
+  width: 100%;
+  height: auto;
+}
 .mirage {
   height: auto;
   width: 100%;
