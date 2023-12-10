@@ -89,8 +89,6 @@ export default function Navbar(){
                             </div>
                         </div>
 
-                        
-
                         <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white hover:bg-indigo-500 font-bold" href="/Faq">
                         F.A.Q
                         </a>  
