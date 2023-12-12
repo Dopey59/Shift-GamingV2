@@ -10,7 +10,7 @@ import Homepage from './pages/homepage';
 import About from './pages/about';
 import Faq from './pages/faq';
 import Contact from './pages/contact';
-import EnSavoirPlus from './pages/guideIG';
+import GuideIg from './pages/guideIG';
 import ComposantPc from './pages/composantPc';
 import GuidePc from './pages/guidePc';
 import GuideBureau from './pages/guideBureau';
@@ -37,11 +37,9 @@ function App() {
         <Route path="/ComposantPc" element={<ComposantPc/>} />
         <Route path="/Siege-gaming" element={<ApiSiege/>} /> 
         <Route path="/Bureaux-gaming" element={<ApiBureaux/>} /> 
-        <Route path="/Guide-ig" element={<EnSavoirPlus/>} /> 
+        <Route path="/Guide-ig" element={<GuideIg/>} /> 
         <Route path="/Guide-pc" element={<GuidePc/>} /> 
         <Route path="/Guide-bureaux" element={<GuideBureau/>} /> 
-
-
     </Routes>
   );
 }
