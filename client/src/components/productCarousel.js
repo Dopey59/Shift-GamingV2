@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import '../swiper.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export default function App() {
   return (
@@ -31,11 +31,11 @@ export default function App() {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 50,
           },
         }}
@@ -48,11 +48,11 @@ export default function App() {
               width="100%"   
               height="auto"                              
               className='montage-pc wallpaper2 '
-              src={require('../assets/jbl.jpg')}
+              src={require('../assets/mouse.jpg')}
               alt="comment choisir son bureau gaming"
               />
             <div className='flex p-2 flex-col gap-1 h-auto w-full'>
-            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
+            <h1 className='text-sm font-semibold'>Souris Gaming</h1>
             <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
             </div>
           </div>
@@ -121,36 +121,7 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex flex-col items-center justify-center'>
-            <img    
-              width="100%"   
-              height="auto"                              
-              className='montage-pc wallpaper2 '
-              src={require('../assets/jbl.jpg')}
-              alt="comment choisir son bureau gaming"
-              />
-            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
-            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
-            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex flex-col items-center justify-center'>
-            <img    
-              width="100%"   
-              height="auto"                              
-              className='montage-pc wallpaper2 '
-              src={require('../assets/jbl.jpg')}
-              alt="comment choisir son bureau gaming"
-              />
-            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
-            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
-            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
-            </div>
-          </div>
-        </SwiperSlide>
+        
       </Swiper>
     </>
   );
