@@ -66,10 +66,10 @@ function ApiBureaux() {
                             <div className="flex flex-col  border-2 border-gray-200 hover:shadow-md hover:shadow-gray-500 rounded ">
                                 <div className="flex flex-col w-full h-auto justify-center items-center bg-gray-100 rounded" key={item.id}>
                                     <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                        <img className="" width="100%" height="auto" src={item.image_link} alt={item.title} />
+                                        <img className="" width="auto" height="auto" src={item.image_link} alt={item.title} />
                                     </a>
                                 </div>
-                                <div className='flex  flex-col items-start p-4 gap-2'>
+                                <div className='flex flex-col items-start p-4 gap-2'>
                                     <h2 className="text-sm font-bold">{item.title}</h2>
                                     <p className='text-xs text-green-500 font-bold border-2 p-1 rounded bg-green-100/50 border-green-500'>Livré avant noël</p>
                                     <p className="text-sm font-bold text-indigo-600">{item.price}€</p>

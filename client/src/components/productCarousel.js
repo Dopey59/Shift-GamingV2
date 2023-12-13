@@ -1,84 +1,157 @@
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-// export default function ProductCarousel(props) {
-//     const responsive = {
-//         desktop: {
-//           breakpoint: { max: 3000, min: 1024 },
-//           items: 3,
-//           slidesToSlide: 3 // optional, default to 1.
-//         },
-//         tablet: {
-//           breakpoint: { max: 1024, min: 464 },
-//           items: 2,
-//           slidesToSlide: 2 // optional, default to 1.
-//         },
-//         mobile: {
-//           breakpoint: { max: 464, min: 0 },
-//           items: 1,
-//           slidesToSlide: 1 // optional, default to 1.
-//         }
-//     };
+import '../swiper.css';
 
-//     return (
-//         <Carousel
-//             swipeable={true}
-//             draggable={false}
-//             showDots={true}
-//             responsive={responsive}
-//             ssr={true}
-//             infinite={true}
-//             // autoPlay={props.deviceType !== "mobile" ? true : false}
-//             // autoPlaySpeed={1000}
-//             keyBoardControl={true}
-//             customTransition="all .5"
-//             // transitionDuration={500}
-//             removeArrowOnDeviceType={["tablet", "mobile"]}
-//             deviceType={props.deviceType}
-//             dotListClass="custom-dot-list-style"
-//         >
-//                 <div className="w-full h-auto bg-white flex flex-col items-center p-2 gap-2">
-//                     <img    
-                                                    
-//                         className='w-full h-full montage-pc wallpaper2 rounded'
-//                         src={require('../assets/gta-6.webp')}
-//                         alt="comment choisir son bureau gaming"
-//                         />
-//                         <h1>Console Xbox</h1>
-//                 </div>
+// import required modules
+import { Pagination } from 'swiper/modules';
 
-//                 <div className="w-full h-auto bg-white flex flex-col items-center p-2 gap-2">
-//                     <img    
-                                                
-//                         className='w-full montage-pc wallpaper2 rounded'
-//                         src={require('../assets/gta-6.webp')}
-//                         alt="comment choisir son bureau gaming"
-//                         />
-//                         <h1>Console PS5</h1>
-//                 </div>
-                
-//                 <div className="w-full h-auto bg-white flex flex-col items-center p-2 gap-2">
-//                     <img    
-                                            
-//                         className='w-full montage-pc wallpaper2 rounded'
-//                         src={require('../assets/gta-6.webp')}
-//                         alt="comment choisir son bureau gaming"
-//                         />
-//                         <h1>Hello</h1>
-//                 </div>
-//                 <div className="w-full h-auto bg-white flex flex-col items-center p-2 gap-2">
-//                     <img    
-                                        
-//                         className='w-full montage-pc wallpaper2 rounded'
-//                         src={require('../assets/gta-6.webp')}
-//                         alt="comment choisir son bureau gaming"
-//                         />
-//                         <h1>Hello</h1>
-//                 </div>
+export default function App() {
+  return (
+    <>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+          spaceBetween: 10,
+        }}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/jbl.jpg')}
+              alt="comment choisir son bureau gaming"
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
 
+        <SwiperSlide>
+        <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/headset.jpg')}
+              alt="casque gaming "
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Casques Gaming</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/keyboard.jpg')}
+              alt="clavier gaming"
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Claviers Gaming</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
 
+        <SwiperSlide>
+        <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/screen.jpg')}
+              alt="comment choisir son bureau gaming"
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Ecrans PC</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
 
-//         </Carousel>
-//     );
-// }
+        <SwiperSlide>
+        <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/jbl.jpg')}
+              alt="comment choisir son bureau gaming"
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/jbl.jpg')}
+              alt="comment choisir son bureau gaming"
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='flex flex-col items-center justify-center'>
+            <img    
+              width="100%"   
+              height="auto"                              
+              className='montage-pc wallpaper2 '
+              src={require('../assets/jbl.jpg')}
+              alt="comment choisir son bureau gaming"
+              />
+            <div className='flex p-2 flex-col gap-1 h-auto w-full'>
+            <h1 className='text-sm font-semibold'>Enceintes bluetooth</h1>
+            <p className='text-sm font-semibold text-indigo-600'>En promotion</p>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+}

@@ -1,0 +1,38 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  ./* Ajoute cette classe à ton conteneur Swiper */
+.mySwiper {
+  position: relative !important;
+}
+
+/* Ajuste la position verticale des bullets pagination */
+.swiper-pagination {
+  position: absolute !important;
+  bottom: 10px !important; /* Ajuste cette valeur selon tes besoins */
+}
+
+/* Assure-toi que les bullets pagination restent centrés horizontalement */
+.swiper-pagination-bullet {
+  margin: 0 5px !important; /* Ajuste cette valeur selon tes besoins */
+}

@@ -62,13 +62,13 @@ function Api() {
                     <h3 className='sm:text-xl text-xs'>*Profite également de <span className='text-indigo-500'>3% de réduction</span> avec le code : REKT03</h3>
                     <p className='text-xs text-gray-500'>*A appliquer lors de votre passage en caisse sur le site REKT.</p>
                 </div>
-                <div className="grid sm:grid-cols-4 p-4 gap-6 sm:gap-0 grid-cols-1">
+                <div className="grid sm:grid-cols-4 p-4 gap-6 grid-cols-1">
                     {data.map(item => (
-                        <div className="sm:p-8 flex justify-center">
+                        <div className="sm:p-2 flex justify-center">
                             <div className="flex flex-col border-2 border-gray-200 hover:shadow-md hover:shadow-gray-500 rounded ">
                                 <div className="flex w-full h-auto flex-col justify-center items-center bg-gray-100 rounded " key={item.id}>
                                     <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                        <img className="" width="300px" height="auto" src={item.image_link} alt={item.title} />
+                                        <img className="" width="auto" height="auto" src={item.image_link} alt={item.title} />
                                     </a>
                                 </div>
                                 <div className='flex flex-col items-start p-4 gap-2'>

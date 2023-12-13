@@ -46,13 +46,10 @@ export default function Homepage(){
 
                     {/* Section 2 start */}
                 <div className="relative bg-gray-100 w-full h-auto p-6 ">
-                    
-                    <div className=' flex flex-col gap-4 items-center justify-center mt-8 mb-8'>
-                        <div className='flex flex-col gap-2 items-start sm:items-center'>
+                    <div className=' flex flex-col gap-1 items-start justify-center mt-8 mb-8'>
                         <h1 className='sm:text-4xl text-xl font-bold uppercase'>Des partenaires puissants</h1>
                         <h2 className='text-xs sm:text-lg'>Clique sur l'une des catégories 
                             pour attérir en parachute chez l'un de nos partenaires. </h2>
-                        </div>
                     </div>
 
                     <div className="grid w-full h-auto gap-6 sm:grid-cols-4 grid-cols-2">
@@ -115,21 +112,22 @@ export default function Homepage(){
                         </div>
                     </div>
 
-                        <div className='flex flex-col justify-start items-start sm:items-center  gap-2 mt-8 mb-8'>
-                            <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Trailer Officiel GTA VI </h1>
-                            <h2 className='text-xs sm:text-lg text-center'>Disponible en 2025. </h2>
+                    <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
+                            <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Items en promo</h1>
+                            <h2 className='text-xs sm:text-lg'>Shop la catégorie dont tu as besoin et attéris direct chez Amazon pour
+                                les meilleurs prix.</h2>
                         </div>
 
-                        <div className='flex justify-center'>
-                            <iframe className='rounded shadow-xl shadow-black' width="1280" height="720" src="https://www.youtube.com/embed/QdBZY2fkU-0" title="Grand Theft Auto VI Trailer 1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <div className='mt-10 '>
+                            <ProductCarousel/>
                         </div>
-
-                        <div className='flex flex-col justify-start items-start sm:items-center  gap-2 mt-8 mb-8'>
+                        
+                        <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
                             <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Catégories Top Loots </h1>
                             <h2 className='text-xs sm:text-lg text-center'>Choisis la section que tu recherches. </h2>
                         </div>
 
-                        <div className='containerLoot grid sm:grid-cols-2 grid-cols-1 gap-4'>
+                        <div className='containerLoot grid sm:grid-cols-3 grid-cols-1 gap-4'>
                             <a href="/Siege-gaming" target="_blank" rel="noopener noreferrer">
                               <div className='relative flex items-end duration-0 transition hover:duration-500 hover:brightness-90 hover:shadow-md hover:shadow-black'>
                               <div className='absolute flex flex-col justify-start'>
@@ -140,23 +138,8 @@ export default function Homepage(){
                                       <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Ergo</span>
                                     </div>
                                 </div>
-                               <img className="" src={require('../assets/gamer-chair.avif')} alt="pub"/>
+                               <img className="" src={require('../assets/gaming-chair.jpg')} alt="pub"/>
                               </div>
-                            </a>
-
-                            <a  className="" href="" target="_blank" rel="noopener noreferrer">
-                                <div className='relative flex items-end duration-0 transition hover:duration-500 hover:brightness-90 hover:shadow-md hover:shadow-black'>
-                                    <div className='absolute flex flex-col justify-start'>
-                                        <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Pc, écrans, claviers..</h1>
-                                        <div className=' flex gap-2 p-2'>
-                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Ecrans 4K</span>
-                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Asus</span>
-                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Nvidia</span>
-                                        <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Corsair</span>
-                                        </div>
-                                    </div>
-                                    <img className="" src={require('../assets/setup-3.avif')} alt="pub"/>
-                                </div>
                             </a>
 
                             <a href="https://www.instant-gaming.com/?igr=gamer-7232d0" target="_blank" rel="noopener noreferrer">
@@ -188,7 +171,7 @@ export default function Homepage(){
                             </a>
                         </div>
 
-                        <div className='flex flex-col justify-start items-start sm:items-center  gap-2 mt-8 mb-8'>
+                        <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-2'>
                             <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Les tips de pros </h1>
                             <h2 className='text-xs sm:text-lg text-center'>Lis nos articles pour te guider dans tes choix.</h2>
                         </div>
@@ -243,7 +226,7 @@ export default function Homepage(){
                             </a>
                         </div>
 
-                        <div className='flex flex-col justify-start items-start sm:items-center  gap-2 mt-8 mb-8'>
+                        <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
                             <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Gaming News </h1>
                             <h2 className='text-xs sm:text-lg text-center'>Comme le New York Times, mais version geek.</h2>
                         </div>
@@ -303,8 +286,6 @@ export default function Homepage(){
                                     </div>
                                </div>
                             </div>
-                                {/* <ProductCarousel/> */}
-
                         </div>
 
                     </div>
