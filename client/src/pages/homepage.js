@@ -113,14 +113,23 @@ export default function Homepage(){
                     </div>
 
                     <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
-                            <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Items en promo</h1>
-                            <h2 className='text-xs sm:text-lg'>Shop la catégorie dont tu as besoin et attéris direct chez Amazon pour
-                                les meilleurs prix.</h2>
-                        </div>
+                        <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Items en promo</h1>
+                        <h2 className='text-xs sm:text-lg'>Shop la catégorie dont tu as besoin et attéris direct chez Amazon pour
+                            les meilleurs prix.</h2>
+                    </div>
 
-                        <div className='mt-10 '>
-                            <ProductCarousel/>
-                        </div>
+                    <div className='mt-10 '>
+                        <ProductCarousel/>
+                    </div>
+
+                    <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
+                        <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Idées cadeaux</h1>
+                        <h2 className='text-xs sm:text-lg'>Trouve des idées pour offrir sans souffrir.</h2>
+                    </div>
+                    
+                    <div className='mt-10 '>
+                        <ProductCarousel/>
+                    </div>
                         
                         <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
                             <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Catégories Top Loots </h1>
