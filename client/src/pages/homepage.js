@@ -4,6 +4,10 @@ import Footer from '../components/footer';
 import TrustPage from '../components/trust';
 import RakutenGames from '../components/apiGameRakuten';
 import ProductCarousel from '../components/productCarousel';
+import CadeauxCarousel from '../components/carouselCadeaux';
+import Avantages from '../components/avantages';
+
+
 
 import '../assets/wallpaper2.webp'
 import '../index.css';
@@ -38,8 +42,9 @@ export default function Homepage(){
                             />
                     </div>
                 </div>
-                
+                <div className='relative bg-white/30 backdrop-sepia/30'>
                     <Carousel/>
+                </div>
 
                     {/* Section 1 end */}
                
@@ -47,9 +52,8 @@ export default function Homepage(){
                     {/* Section 2 start */}
                 <div className="relative bg-gray-100 w-full h-auto p-6 ">
                     <div className=' flex flex-col gap-1 items-start justify-center mt-8 mb-8'>
-                        <h1 className='sm:text-4xl text-xl font-bold uppercase'>Des partenaires puissants</h1>
-                        <h2 className='text-xs sm:text-lg'>Clique sur l'une des catégories 
-                            pour attérir en parachute chez l'un de nos partenaires. </h2>
+                        <h1 className='sm:text-2xl text-xl font-bold uppercase'>Des partenaires puissants |</h1>
+                        <h2 className='text-xs sm:text-lg'>Les meilleurs sites pour économiser, regroupés en un clic ! </h2>
                     </div>
 
                     <div className="grid w-full h-auto gap-6 sm:grid-cols-4 grid-cols-2">
@@ -113,8 +117,8 @@ export default function Homepage(){
                     </div>
 
                     <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
-                        <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Items en promo</h1>
-                        <h2 className='text-xs sm:text-lg'>Shop la catégorie dont tu as besoin et attéris direct chez Amazon pour
+                        <h1 className='relative sm:text-2xl text-xl font-bold uppercase'>Stuff |</h1>
+                        <h2 className='text-xs sm:text-lg'>Loot le stuff dont tu as besoin et attéris direct chez Amazon pour
                             les meilleurs prix.</h2>
                     </div>
 
@@ -123,17 +127,17 @@ export default function Homepage(){
                     </div>
 
                     <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
-                        <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Idées cadeaux</h1>
+                        <h1 className='relative sm:text-2xl text-xl font-bold uppercase'>Idées Cadeaux |</h1>
                         <h2 className='text-xs sm:text-lg'>Trouve des idées pour offrir sans souffrir.</h2>
                     </div>
                     
                     <div className='mt-10 '>
-                        <ProductCarousel/>
+                        <CadeauxCarousel/>
                     </div>
                         
                         <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
-                            <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Catégories Top Loots </h1>
-                            <h2 className='text-xs sm:text-lg text-center'>Choisis la section que tu recherches. </h2>
+                            <h1 className='relative sm:text-2xl text-xl font-bold uppercase'>Les plus demandés |</h1>
+                            <h2 className='text-xs sm:text-lg text-center'>Besoin de confort, d'un nouvel espace de bureau ou d'un nouveau jeu pour noël ? </h2>
                         </div>
 
                         <div className='containerLoot grid sm:grid-cols-3 grid-cols-1 gap-4'>
@@ -142,12 +146,12 @@ export default function Homepage(){
                               <div className='absolute flex flex-col justify-start'>
                                     <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Chaises Gaming</h1>
                                     <div className=' flex gap-2 p-2'>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Tissu</span>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Cuir</span>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Ergo</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Tissu</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Cuir</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Ergo</span>
                                     </div>
                                 </div>
-                               <img className="" src={require('../assets/gaming-chair.jpg')} alt="pub"/>
+                               <img className="" src={require('../assets/gaming-chair.webp')} alt="pub"/>
                               </div>
                             </a>
 
@@ -156,9 +160,9 @@ export default function Homepage(){
                                 <div className='absolute flex flex-col justify-start'>
                                     <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Jeux vidéos</h1>
                                     <div className=' flex gap-2 p-2'>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Xbox</span>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Ps5</span>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Switch</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Xbox</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>PS5</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Switch</span>
                                     </div>
                                 </div>
                                     <img className="" src={require('../assets/gta3.avif')} alt="pub"/>
@@ -170,9 +174,9 @@ export default function Homepage(){
                               <div className='absolute flex flex-col justify-start'>
                                     <h1 className='sm:text-3xl text-white sm:p-2 mx-2 rounded font-bold'>Bureaux Gaming</h1>
                                     <div className=' flex gap-2 p-2'>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Carbone</span>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Robuste</span>
-                                      <span className='text-white  border-2 p-1 text-xs bg-black rounded'>Réglable</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Carbone</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Robuste</span>
+                                      <span className='text-white  border-2 p-2 text-xs bg-white/30 backdrop-sepia/30 border-white rounded font-bold '>Réglable</span>
                                     </div>
                                 </div>
                                     <img className="" src={require('../assets/desk-gaming.jpg')} alt="pub"/>
@@ -181,11 +185,11 @@ export default function Homepage(){
                         </div>
 
                         <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-2'>
-                            <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Les tips de pros </h1>
+                            <h1 className='relative sm:text-2xl text-xl font-bold uppercase'>Les Tips de pros |</h1>
                             <h2 className='text-xs sm:text-lg text-center'>Lis nos articles pour te guider dans tes choix.</h2>
                         </div>
 
-                        <div className='w-full grid sm:grid-cols-3 gap-4 items-center border-2 border-gray-100'>
+                        <div className='w-full h-auto grid sm:grid-cols-3 gap-4 items-center border-2 border-gray-100'>
                            
                             <a href='/Guide-pc'>
                             <div className='w-full sm:mt-8 mt-4 gap-4 sm:mb-8 flex flex-col items-center border-2 border-gray-100 bg-white rounded p-4'>
@@ -207,8 +211,8 @@ export default function Homepage(){
                                 <div className='w-full sm:mt-8 mt-4 gap-4 sm:mb-8 flex flex-col items-center border-2 border-gray-100 bg-white rounded p-4'>
                                     <img
 
-                                        width="300px" height="100px"
-                                        className='montage-pc wallpaper2 rounded-xl w-full h-auto'
+                                        sizes='480w'
+                                        className='montage-pc wallpaper2 rounded-xl'
                                         src={require('../assets/gaming-desk.avif')}
                                         alt="comment choisir son bureau gaming"
                                     />
@@ -225,7 +229,7 @@ export default function Homepage(){
 
                                         
                                         className='montage-pc wallpaper2 rounded-xl w-full h-auto'
-                                        src={require('../assets/guide-ig.jpg')}
+                                        src={require('../assets/guide-ig.webp')}
                                         alt="comment choisir son bureau gaming"
                                     />
                                     <h1 className='font-bold uppercase'>Guide achat Instant Gaming </h1>
@@ -235,8 +239,8 @@ export default function Homepage(){
                             </a>
                         </div>
 
-                        <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
-                            <h1 className='relative sm:text-4xl text-xl font-bold uppercase'>Gaming News </h1>
+                        {/* <div className='flex flex-col justify-start items-start gap-2 mt-8 mb-8'>
+                            <h1 className='relative sm:text-2xl text-xl font-bold uppercase'>Shift News </h1>
                             <h2 className='text-xs sm:text-lg text-center'>Comme le New York Times, mais version geek.</h2>
                         </div>
 
@@ -295,8 +299,11 @@ export default function Homepage(){
                                     </div>
                                </div>
                             </div>
+                        </div> */}
+                        <div className='flex flex-col justify-center items-start gap-2 mt-8 mb-2'>
+                            <h1 className='relative sm:text-2xl text-xl font-bold uppercase'>Avantages |</h1>
                         </div>
-
+                        <Avantages/>
                     </div>
                 </div>
         </main>
